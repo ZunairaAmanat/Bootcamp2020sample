@@ -34,5 +34,5 @@ jobs:
       - name: Instal surge
         run: npm install --global surge
       - name: Deploy on  surge
-        run: surge ./ index.zuni.surge.sh --token ${{ secret }}
+        run: surge ./ index.zuni.surge.sh --token ${{ secrets.Surge_token }}
  
